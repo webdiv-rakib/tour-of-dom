@@ -10,40 +10,64 @@
         li {
             color: tomato;
         }
+
+        #fruites-title {
+            color: black;
+        }
+
+        .important-places {
+            color: blueviolet;
+        }
     </style>
 </head>
 
 <body>
     <header>
         <h1>Welcome to my DOM</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit placeat asperiores dolorum illo,
+            repellendus ullam neque voluptate et molestiae necessitatibus rem iste quas distinctio, eligendi eos
+            expedita at perspiciatis fugiat!</p>
     </header>
     <main>
-        <h1>My Awesome DOM de baba</h1>
-        <ul>
-            <li>Jalali set</li>
-            <li>Shafayet</li>
-            <li>Bonobash</li>
-        </ul>
-        <ul>
-            <li>Apple</li>
-            <li>Banana</li>
-            <li>Orange</li>
-        </ul>
+        <section>
+            <h1>My Awesome DOM de baba</h1>
+            <ul>
+                <li>Jalali set</li>
+                <li>Shafayet</li>
+                <li>Bonobash</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="fruites-title">Fruits I like</h1>
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Orange</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id='places-title'>Places I like to visit</h1>
+            <ul>
+                <li class="important-places">Shundarban</li>
+                <li class="important-places">Kataban</li>
+                <li class="important-places">Shalban</li>
+            </ul>
+        </section>
     </main>
     <script src="js/dom.js"></script>
     <script>
         const liCollection = document.getElementsByTagName('li');
         // console.log(liCollection);
         for (const li of liCollection) {
-            console.log(li.innerText);
+            // console.log(li.innerText);
         }
         const allHeadings = document.getElementsByTagName('h1');
         for (const h1 of allHeadings) {
-            console.log(h1.innerText);
+            // console.log(h1.innerText);
         }
     </script>
     <script>
-        console.log('Adding js inside the html file')
+        // console.log('Adding js inside the html file')
     </script>
 </body>
 
