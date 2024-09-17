@@ -24,7 +24,8 @@
 <body>
     <header>
         <h1>Welcome to my DOM</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit placeat asperiores dolorum illo,
+        <p class="likha">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit placeat asperiores
+            dolorum illo,
             repellendus ullam neque voluptate et molestiae necessitatibus rem iste quas distinctio, eligendi eos
             expedita at perspiciatis fugiat!</p>
     </header>
@@ -64,6 +65,14 @@
         const allHeadings = document.getElementsByTagName('h1');
         for (const h1 of allHeadings) {
             // console.log(h1.innerText);
+        }
+        const places = document.getElementsByClassName('important-places');
+        for (const place of places) {
+            console.log(place.innerText);
+        }
+        const likhaLikhi = document.getElementsByClassName('likha');
+        for (const sent of likhaLikhi) {
+            console.log(sent.innerText);
         }
     </script>
     <script>
