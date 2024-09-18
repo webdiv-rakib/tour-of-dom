@@ -46,7 +46,7 @@
                 <li>Orange</li>
             </ul>
         </section>
-        <section>
+        <section id = 'places-container'>
             <h1 id='places-title'>Places I like to visit</h1>
             <ul>
                 <li class="important-places">Shundarban</li>
@@ -56,6 +56,7 @@
         </section>
     </main>
     <script src="js/dom.js"></script>
+    <script src="js/styleInJs.js"></script>
     <script>
         const liCollection = document.getElementsByTagName('li');
         // console.log(liCollection);
@@ -71,17 +72,17 @@
 
         const places = document.getElementsByClassName('important-places');
         for (const place of places) {
-            console.log(place.innerText);
+            // console.log(place.innerText);
         }
         const likhaLikhi = document.getElementsByClassName('likha');
         for (const sent of likhaLikhi) {
-            console.log(sent.innerText);
+            // console.log(sent.innerText);
         }
 
         // querySelectorAll
         const someLi = document.querySelectorAll('.fruites-container li');
         for (const li of someLi) {
-            console.log(li.innerText);
+            // console.log(li.innerText);
         }
     </script>
     <script>
