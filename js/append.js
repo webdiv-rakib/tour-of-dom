@@ -33,3 +33,27 @@ ul.appendChild(li3);
 
 section.appendChild(ul);
 mainContainer.appendChild(section);
+
+// practice
+// 1.where to add.
+const mainContainer2 = document.getElementById("main-container");
+// 2.what to added
+const section2 = document.createElement("section");
+const h2 = document.createElement("h1");
+h2.innerText = "My Dress Section";
+section2.appendChild(h2);
+
+const ul2 = document.createElement("ul");
+const li4 = document.createElement("li");
+li4.innerText = "Pant";
+ul2.appendChild(li4);
+
+const li5 = document.createElement("li");
+li5.innerText = "Shirt";
+ul2.appendChild(li5);
+
+const li6 = document.createElement("li");
+li6.innerText = "Shoe";
+ul2.appendChild(li6);
+section2.appendChild(ul2);
+mainContainer2.appendChild(section2);
